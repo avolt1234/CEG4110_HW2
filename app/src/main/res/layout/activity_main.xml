@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/clockBlocker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setSeconds"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Seconds" />
+
+            <Button
+                android:id="@+id/minusSeconds"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusSec"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addSeconds"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="addSec"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/setMinutes"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Minutes" />
+
+            <Button
+                android:id="@+id/minusMinutes"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusMin"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addMinutes"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="addMin"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setHours"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Hours" />
+
+            <Button
+                android:id="@+id/minusHours"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusHour"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addHours"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="addHour"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setDays"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Days" />
+
+            <Button
+                android:id="@+id/minusDays"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusDay"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addDays"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="addDay"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setMonths"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Months" />
+
+            <Button
+                android:id="@+id/minusMonths"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusMonth"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addMonths"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="addMonth"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setYears"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Years" />
+
+            <Button
+                android:id="@+id/minusYears"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="minusYear"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/addYears"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="addYear"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addAnalog"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:onClick="newAnalog"
+                android:text="Add Analog" />
+
+            <Button
+                android:id="@+id/addDigital"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:onClick="newDigital"
+                android:text="Add Digital" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/undoButton"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:onClick="undoer"
+                android:text="Undo" />
+
+            <Button
+                android:id="@+id/redoButton"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:onClick="redoer"
+                android:text="Redo" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/Dating"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="35dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
